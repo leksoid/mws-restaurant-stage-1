@@ -5,7 +5,6 @@ self.addEventListener('install',function(event){
                 return cache.addAll(cacheFiles);
             })
     );
-
 });
 
 
@@ -27,13 +26,9 @@ self.addEventListener('fetch',function (event) {
                     }).catch(function (err) {
                             console.error(err);
                         })
-
-
                 }
-
             })
     )
-
 });
 
 const cacheFiles = [
